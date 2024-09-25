@@ -141,15 +141,59 @@ document.getElementById('btn-add-money-3')
 // button clickable
 const historyButton =document.getElementById('history-btn');
 const assistantButton =  document.getElementById('assistant-btn');
+
+
+
 historyButton.addEventListener('click',function(){
+    
     historyButton.classList.add(
-       'bg-[#B4F461]' 
+      'bg-[#B4F461]'
     );
+    
     assistantButton.classList.remove(
         'bg-[#B4F461]'
     );
-document.getElementById('donation-section').classList.add('hidden');
+    document.getElementById('donation-section').classList.add('hidden');
+   
 })
+
+assistantButton.addEventListener('click',function(){
+   
+    assistantButton.classList.add(
+       'bg-[#B4F461]' 
+    );
+    
+    historyButton.classList.add(
+        'bg-[#B4F461]'
+    );
+    document.getElementById('history-section').classList.add('hidden'); 
+  
+    
+})
+const historySection = document.getElementById('history-section');
+const donationSection = document.getElementById('donation-section');
+ historyButton.addEventListener('click',function(){
+    historySection.classList.remove('hidden');
+ })
+ assistantButton.addEventListener('click',function(){
+    donationSection.classList.remove('hidden');
+ })
+
+// const historyBtn = document.getElementById('history-btn');
+//     const donationBtn = document.getElementById('donation-btn');
+//     const historySection = document.getElementById('history-section');
+//     const donationSection = document.getElementById('donation-section');
+
+//     historyBtn.addEventListener('click', function() {
+//         historySection.classList.remove('hidden');
+//         donationSection.classList.add('hidden');
+//     });
+
+
+//     donationBtn.addEventListener('click', function() {
+//         donationSection.classList.remove('hidden');
+//         historySection.classList.add('hidden');
+//     });
 
 
 
