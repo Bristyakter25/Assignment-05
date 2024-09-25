@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+.lexend-font {
+    font-family: "Lexend", sans-serif;
+    font-optical-sizing: auto;
+    
+  }
+  .btn-1{
+    padding: 12px 32px;
+  }
+  .image-logo{
+    margin-right: 15px;
+  }
+  .donation-entry{
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 16px;
+    margin-bottom: 10px;
+    padding: 20px;
+  }
+  .amount-style{
+    color: rgb(17, 17, 17);
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .date-style{
+    color: rgba(17, 17, 17, 0.7);
+    font-size: 16px;
+    font-weight: 300;
+  }
+  
